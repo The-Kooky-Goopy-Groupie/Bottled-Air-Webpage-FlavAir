@@ -3,9 +3,10 @@
 
 .Hero
 {
-	color:whitesmoke;
+	/*color:whitesmoke; swap this out with better coloring here*/
 	width: 100%;
 	background-color: cadetblue;
+	
 }
 .HeroAbout
 {
@@ -28,6 +29,8 @@
 {
 		background-color: #102271;
 	color:antiquewhite;
+	padding-left: 10px;
+
 }
 body
 {
@@ -61,3 +64,19 @@ body
   background-color: #0045A2;
   color: #C9CFC6;
 }
+.ProductImg img
+{
+	/*this is to define product images, size should be set on image as 400 by 400*/
+}
+.Footers_Temp footer{
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	width: 100%;
+	background-color: cadetblue;
+}
+
+/*things to fix in style sheet: 
+H1 is smaller then H2, this makes no sense
+better color pallent for the text on the light blue backgrond*/
