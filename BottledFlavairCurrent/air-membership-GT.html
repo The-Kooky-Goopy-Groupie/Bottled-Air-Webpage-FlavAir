@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<!--Defines paths and use of javascript and CSS files in page formatting and activity.-->
+	<script type = "text/javascript" language = "javascript" src = "JSS/membershipForm.js"></script>
+	<link rel = "stylesheet" href = "CSS/Form-Style.css">
+	<!--Presents the title of the page.-->
+	<title>Lakeland's First Flavored Bottled Air - Fresh Air on the Go</title>
+</head>
+
+<body>
+	<!--Defines transport bar at top of page, non-functioning as of now.-->
+	<nav class = "topTransport">
+		<a href="/">Home</a>
+		<a href="About-us.html" id ="About">About</a>
+		<a href="Shop_Outline.html" id = "Shop">Shop</a>
+		<a href = "air-membership-GT.html" id = "Membership">Air Subscription Plan</a>
+
+	</nav>
+	<!--Presents page information to indicate information about the full site to the user.-->
+	<section class = "Information">
+		<h1>Lakeland's Flavored Bottled Air</h1>
+		<h2>A sip of fresh air</h2>
+	</section>
+	<!--Defines information form for user to fill out, as well as its method, action, and ID.-->
+	<section class = "Form">
+		<form method = "get" action = "#" id = "FullForm">
+			<fieldset>
+				<!--Presents form title for air subscription.-->
+				<h2>Air Subscription Form</h2>
+				<!--Title for personal data section of the form.-->
+				<section class = "PersonalHeader">
+					<label>Personal Information<br></label>
+				</section>
+				<section>
+					<br>
+					<!--Prompts user for and collects user first name in input field.-->
+					<label>First Name:</label>
+					<input type = "text" name = "fName" id = "fname" class = "formCont">
+					<!--Defines error message for improper fname entry, showing error via javascript when needed.-->
+					<div class = "hidden" id = "fnameError">
+						<p>The first name field may not be empty.</p>
+					</div>
+					
+					<!--Prompts user for and collects user last name in input field.-->
+					<label><br>Last Name:</label>
+					<input type = "text" name = "lName" id = "lname" class = "formCont">
+					<!--Defines error message for improper lname entry, showing error via javascript when needed.-->
+					<div class = "hidden" id = "lnameError">
+						<p>The last name field may not be empty.</p>
+					</div>
+					
+					<!--Prompts user for and collects user phone number in input field.-->
+					<label><br>Phone Number:</label>
+					<input type = "text" name = "phoneNum" id = "phone" class = "formCont">
+					<!--Defines error message for improper phone number entry, showing error via javascript when needed.-->
+					<div class = "hidden" id = "phoneError">
+						<p>Please only include dash and numeric characters.</p>
+					</div>
+					
+					<!--Prompts user for and collects user email in input field.-->
+					<label><br>Email Address:</label>
+					<input type = "text" name = "email" id = "email" class = "formCont">
+					<!--Defines error message for improper email entry, showing error via javascript when needed.-->
+					<div class = "hidden" id = "emailError">
+						<p>Please include an email with a top level domain preceded by a period and @ sign.</p>
+					</div>
+					
+					<!--Prompts user for and collects user password in input field.-->
+					<label><br>Password:</label>
+					<input type = "password" name = "password" id = "password" class = "formCont">
+					<!--Defines error message for improper password entry, showing error via javascript when needed.-->
+					<div class = "hidden" id = "passError">
+						<p>Please include a password 6-9 characters long with at least one letter and number.</p>
+					</div>
+				</section>
+				<br>
+				<br>
+			<!--Prompts user to select a radio option from the selection for the air subscription level.-->
+			<section class = "Radio">
+				<label>Subscription<br></label>
+				<!--Defines each individual button.-->
+				<input type = "radio" id = "base" name = "subscription" value="Base">Basic<br />
+				
+				<input type = "radio" id = "pro" name = "subscription" value="Pro">Pro<br />
+				
+				<input type = "radio" id = "premier" name = "subscription" value="Premier">Premier<br />
+				<!--Defines error message for lack of radio button selection, showing error via javascript when needed.-->
+				<div class = "hidden" id = "radioError">
+					<p>Please select your subscription.</p>
+				</div>
+			</section>
+			<br>
+			
+			<!--Prompts user to choose from the dropdown selection to choose their air quality.-->
+			<section class = "Dropdown">
+				<label>Air Quality</label><br>
+				<select name = "Quality">
+					<!--Defines each selectable dropdown option.-->
+					<option>Fresh</option>
+					<option>Flavored</option>
+					<option>Nutrient-Enhanced</option>
+				</select>
+			</section>
+			<!--Used to present message informing user of improper form input in certain sections.-->
+			<div id = "errors">
+			</div>
+			<br>
+			<br>
+			<!--Defines button section, used to present submit and reset options at the bottom of the form.-->
+			<section class = "Buttons">
+				<!--Defines submit and reset buttons officially.-->
+				<button class = "Submit" type = "submit" id = "submit">Submit</button>
+				<button class = "Submit" type = "reset">Reset</button>
+			</section>
+			</fieldset>
+		</form>
+		<!--Shows the  final submission complete message if no errors rose upon submission.-->
+		<div id = "Final" class = "hidden">
+			<p>Submission Complete!</p>
+		</div>
+	</section>
+	<p></p>
+	<p></p>
+	<!--Presents footer on the bottom of the page.-->
+	<footer>
+		<p><strong>Call Or Text - <a href ="tel:1234567890">(123)-456-7890</a>  - for any needed additional information </strong></p>
+       	<p></p>
+   		<p><em>Copyright 2021 - FlavAir - All Rights Resevred  </em></p>
+        <p></p>
+	</footer>
+</body>
+</html>
