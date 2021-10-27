@@ -76,7 +76,17 @@ body
 	width: 100%;
 	background-color: cadetblue;
 }
-
+	.SocialList
+	{
+		
+		display: inline-block;
+		font-size: 200%;
+		list-style-type: none;
+	}
+.SocialList a
+{
+	color: antiquewhite;
+}
 /*things to fix in style sheet: 
 H1 is smaller then H2, this makes no sense
 better color pallent for the text on the light blue backgrond*/
