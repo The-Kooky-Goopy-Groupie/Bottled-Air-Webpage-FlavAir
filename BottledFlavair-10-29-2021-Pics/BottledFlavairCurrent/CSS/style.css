@@ -2,7 +2,7 @@
 /* CSS Document */
 .post
 {
-	color:black;
+	color: #102271;
 	background: antiquewhite;
 	margin:1%;
 	padding:0.5%;
@@ -15,9 +15,16 @@
 	background-color: cadetblue;
 	
 }
+.Herofive
+{
+	/*color:whitesmoke; swap this out with better coloring here*/
+	width: 100%;
+	background-color: cadetblue;
+	padding-right: 70%;
+}
 .HeroAbout
 {
-		color:whitesmoke;
+	color: #102271;
 	width: 100%;
 	background-color: cadetblue;
 	width:90%;
@@ -34,14 +41,14 @@
 }
 .Information
 {
-		background-color: #102271;
+	background-color: #102271;
 	color:antiquewhite;
 	padding-left: 10px;
 
 }
 body
 {
-	color:black;
+	color: #102271;
 	background-color:darkslategrey;
 }
 .Top
@@ -77,9 +84,7 @@ body
 }
 .Footers_Temp footer{
 	padding-top: 10px;
-	padding-right: 10px;
 	padding-bottom: 10px;
-	padding-left: 10px;
 	width: 100%;
 	background-color: cadetblue;
 }
